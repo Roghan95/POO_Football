@@ -9,6 +9,7 @@ class Equipe {
     public function __construct(Pays $pays, string $nom_equipe) {
         $this->pays = $pays;
         $this->nom_equipe = $nom_equipe;
+        $this->pays->ajouterEquipe($this);
     }
 
     /**
@@ -27,7 +28,6 @@ class Equipe {
     public function setPays($pays)
     {
         $this->pays = $pays;
-
         return $this;
     }
 
@@ -69,5 +69,10 @@ class Equipe {
         $this->joueurs = $joueurs;
 
         return $this;
+    }
+
+    public function __toString()
+    {
+        return $this->nom_equipe;
     }
 }

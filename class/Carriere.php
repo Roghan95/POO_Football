@@ -2,13 +2,13 @@
 
 class Carriere {
     private int $annee;
-    private Joueur $joueur;
-    private Equipe $equipe;
+    private Joueur $joueurs;
+    private Equipe $equipes;
 
-    public function __construct(int $annee, Joueur $joueur, Equipe $equipe) {
+    public function __construct(int $annee, Joueur $joueurs, Equipe $equipes) {
         $this->annee = $annee;
-        $this->joueur = $joueur;
-        $this->equipe = $equipe;
+        $this->joueurs = $joueurs;
+        $this->equipes = $equipes;
     }
 
     /**
@@ -32,41 +32,41 @@ class Carriere {
     }
 
     /**
-     * Get the value of joueur
+     * Get the value of joueurs
      */ 
     public function getJoueur()
     {
-        return $this->joueur;
+        return $this->joueurs;
     }
 
     /**
-     * Set the value of joueur
+     * Set the value of joueurs
      *
      * @return  self
      */ 
-    public function setJoueur($joueur)
+    public function setJoueur($joueurs)
     {
-        $this->joueur = $joueur;
+        $this->joueurs = $joueurs;
 
         return $this;
     }
 
     /**
-     * Get the value of equipe
+     * Get the value of equipes
      */ 
     public function getEquipe()
     {
-        return $this->equipe;
+        return $this->equipes;
     }
 
     /**
-     * Set the value of equipe
+     * Set the value of equipes
      *
      * @return  self
      */ 
-    public function setEquipe($equipe)
+    public function setEquipe($equipes)
     {
-        $this->equipe = $equipe;
+        $this->equipes = $equipes;
 
         return $this;
     }

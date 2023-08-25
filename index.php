@@ -14,13 +14,20 @@ spl_autoload_register(function ($class_name) {
 <?php 
 
 $france = new Pays("France");
+$bresil = new Pays("Brésil");
+$portugal = new Pays("Portugal");
+$argentine = new Pays("Argentine");
 
-$psg = new Equipe($france, "PSG");
+$joueur1 = new Joueur("Mbappe", "Killian", "15/03/2001", $france);
+$joueur2 = new Joueur("Neymar", "Jr", "27/03/1991", $bresil);
+$joueur3 = new Joueur("Lionel", "Messi", "16/01/1986", $argentine);
+$joueur4 = new Joueur("Cristiano", "Ronaldo", "13/07/1985", $portugal);
 
-$jouer = new Joueur()
+$equipe1 = new Equipe($france, "PSG");
+$equipe2 = new Equipe($bresil, "")
 
-$carriere = new Carriere(2017, $joueur, $psg);
-// $joueur = new Joueur("");
+
+
 
 
 ?>
