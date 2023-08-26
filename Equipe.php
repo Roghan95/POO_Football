@@ -95,8 +95,6 @@ class Equipe
                     }
                 }
             }
-        } else {
-            $resultat .= "Aucun joueur dans l'équipe";
         }
         return $resultat;
     }
