@@ -35,7 +35,7 @@
 
     $equipe1 = new Equipe($france, "PSG");
     $equipe2 = new Equipe($france, "OM");
-    $equipe3 = new Equipe($france, "Racing club Stras");
+    $equipe3 = new Equipe($france, "Racing Club Stras");
     $equipe4 = new Equipe($espagne, "Real Madrid");
     $equipe5 = new Equipe($espagne, "FC Barcelone");
 

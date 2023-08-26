@@ -79,7 +79,7 @@ class Joueur
         $mtn = new DateTime();
         $age = $mtn->diff($this->date_naissance)->y;
 
-        $resultat = "<h1>Carrière de $this</h1>
+        $resultat = "<h1>Carrière de $this :</h1>
         <p>Nationalité : " . $this->nationalite->getLibelle() . "<br>
         Age : $age ans</p>
         <p>Equipes de $this->prenom $this->nom :<br>";
