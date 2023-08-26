@@ -32,7 +32,7 @@ class Pays
 
     public function lesEquipesDuPays()
     {
-        $resultat = "<h1>Les équipes du pays : </h1>";
+        $resultat = "<h1>Les équipes de $this->nom_pays : </h1>";
         foreach ($this->equipes as $equipe) {
             $resultat .= $equipe . "<br>";
         }

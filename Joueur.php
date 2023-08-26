@@ -82,7 +82,7 @@ class Joueur
         $resultat = "<h1>Carrière de $this</h1>
         <p>Nationalité : " . $this->nationalite->getLibelle() . "<br>
         Age : $age ans</p>
-        <p>Equipes $this->nom :<br>";
+        <p>Equipes de $this->prenom $this->nom :<br>";
 
         foreach ($this->carriere as $carriere) {
             $resultat .= $carriere->getEquipe() . " (" . $carriere->getAnneeSaison() . ")<br>";
